@@ -1,0 +1,10 @@
+server:
+  port: 8888
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/serin9811/spring-cloud-config-server-test
+          search-paths: cloud-config-file/**
+          default-label: main
